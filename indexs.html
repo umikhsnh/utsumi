@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Umi Khasanah</h1>
+        <img src="image.jpg" alt="Umi Khasanah" class="header-img" id="header-img">
+        <p class="sub-header">S1 Bisnis Digital</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Saya seorang Mahasiswi dari Universitas Ma’soem jurusan S1 Bisnis Digital.  
+            Saya tengah mengejar pengetahuan dan memperdalam  bidang Bisnis Digital. 
+            Saya gigih dalam mengerjakan sesuatu yang berkaitan dengan Bisnia Digital. 
+            Saya yakin Keinginan untuk menciptakan perubahan yang bermanfaat akan tercapai.</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li onclick="toggleSkillInfo(0)">Bahasa Pemrograman</li>
+            <div class="skill-info">
+                <p>Keterangan tentang Bahasa Pemrograman:</p>
+                <p>Bahasa pemrograman adalah alat untuk menulis program komputer 
+                    dengan memberikan instruksi kepada komputer agar dapat melakukan tugas tertentu.</p>
+            </div>
+            <li onclick="toggleSkillInfo(1)">Desain</li>
+            <div class="skill-info">
+                <p>Keterangan tentang Desain:</p>
+                <p>Desain adalah proses merencanakan solusi untuk mencapai 
+                    tujuan tertentu, termasuk fungsi, estetika, dan kinerja.</p>
+            </div>
+            <li onclick="toggleSkillInfo(2)">Digital Marketing</li>
+            <div class="skill-info">
+                <p>Keterangan tentang Digital Marketing:</p>
+                <p>Digital marketing adalah praktik pemasaran menggunakan platform dan 
+                    media digital untuk mempromosikan produk atau layanan secara online.</p>
+            </div>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Position</th>
+                <th>Place</th>
+            </tr>
+            <tr>
+                <td>2022 - Now</td>
+                <td>Pelatihan Desain</td>
+                <td>Secara online</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>Praktik Pengenalan Lapangan (PPL)</td>
+                <td>Apotek Al-Ma'soem</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>MA Mu'awanah - Majalaya, Bandung</li>
+            <li>Ma'soem University - Cipacing, Bandung</li>
+        </ul>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact</h2>
+        <p>Email: umi176341@gmail.com</p>
+        <p>Phone: +6285871798757</p>
+    </section>
+
+    <section class="comment-section">
+        <h2>Comments</h2>
+        <form>
+            <div class="form-group">
+                <label for="comment">Leave a comment:</label>
+                <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitComment()">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
